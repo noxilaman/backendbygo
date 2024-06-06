@@ -32,7 +32,7 @@ The objective of this project is to provide a robust backend framework that leve
 - Environment-based configuration management.
 
 ## Project Structure
-
+```sh
 project/
 │
 ├── .env(.env.test)
@@ -52,6 +52,7 @@ project/
 │ └── auth_middleware.go
 └── routes/
 └── routes.go
+```
 
 
 ## Installation
