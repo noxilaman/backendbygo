@@ -29,5 +29,5 @@ func InitDB() {
 	}
 
 	// Auto migrate the models
-	DB.AutoMigrate(&models.Product{})
+	DB.AutoMigrate(&models.Product{}, &models.User{})
 }
