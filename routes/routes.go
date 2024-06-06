@@ -20,6 +20,10 @@ func SetupRouter() *gin.Engine {
 		protected.GET("/users/:id", controllers.GetUser)
 		protected.GET("/products", controllers.GetProducts)
 		protected.POST("/products", controllers.CreateProduct)
+		protected.GET("/products/:id", controllers.GetProduct)
+		protected.PUT("/products/:id", controllers.UpdateProduct)
+		protected.DELETE("/products/:id", controllers.DeleteProduct)
+
 	}
 
 	return r
