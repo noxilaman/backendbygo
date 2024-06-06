@@ -13,6 +13,7 @@ This project is a backend framework built using Go, the Gin web framework, and M
   - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
     - [Authentication](#authentication)
+    - [Customers](#customers)
     - [Products](#products)
     - [Users](#users)
   - [Environment Variables](#environment-variables)
@@ -41,9 +42,11 @@ project/
 ├── .gitignore
 ├── controllers/
 │ ├── auth_controller.go
+│ ├── customer_controller.go
 │ ├── product_controller.go
 │ └── user_controller.go
 ├── models/
+│ ├── customer.go
 │ ├── product.go
 │ └── user.go
 ├── db/
@@ -108,6 +111,14 @@ project/
 - **POST** `/login`: User login.
 - **POST** `/register`: User registration.
 - **POST** `/refresh`: Refresh JWT token.
+
+### Customers
+
+- **GET** `/customers`: Get all customers with pagination support.
+- **GET** `/customers/:id`: Get a specific customer by ID.
+- **POST** `/customers`: Create a new customer.
+- **PUT** `/customers/:id`: Update a customer by ID.
+- **DELETE** `/customers/:id`: Delete a customer by ID.
 
 ### Products
 
